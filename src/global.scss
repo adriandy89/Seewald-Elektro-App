@@ -1,0 +1,71 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+#container {
+    text-align: center;
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;  
+    color: #8c8c8c;  
+    margin: 0;
+    text-align: justify;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+
+  .card {
+      margin: 10px auto;
+      padding: 5px;
+      border-radius: 10px;
+  }
+  .hrSmall{
+    width: 80%;
+    height: 2px; 
+    background: radial-gradient(orange, white); 
+    margin: 0 auto;
+  }
+  a{
+      color: gray;
+  }
+.inputText{
+  text-align: left;
+  border-radius: 20px;
+  background: linear-gradient(to right, white, rgb(240, 240, 240));
+  color: black;
+  margin: 5px auto;
+  margin-top: 15px;
+  font-size: 14px;
+}

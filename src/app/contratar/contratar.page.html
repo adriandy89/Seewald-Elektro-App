@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hire</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-grid>
+      <ion-card class="card">
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <h1>Hire our Services</h1>
+              <hr class="hrSmall">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text >Complete your information</ion-text> <br>
+              <ion-text>We will get in contact with you</ion-text> <br>              
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <form style="width: 100%; margin: 0em auto; padding: 0%;" [formGroup]="usuario" (ngSubmit)="guardarDatos()">
+              
+              <ion-item>
+                <ion-input formControlName="name" placeholder="Full Name" class="inputText"></ion-input>
+              </ion-item>
+              <ion-label color="danger" *ngIf="usuario.controls.name.errors?.required && (usuario.controls.name.touched || usuario.controls.name.dirty)">* Name required. </ion-label>
+              <ion-label color="danger" *ngIf="usuario.controls.name.errors?.minlength && (usuario.controls.name.touched ||usuario.controls.name.dirty)">* Full name have at least 4 characters.</ion-label>
+              
+              <ion-item>
+                <ion-input formControlName="address" placeholder="Address" class="inputText"></ion-input>
+              </ion-item>
+              <ion-label color="danger" *ngIf="usuario.controls.address.errors?.required && (usuario.controls.address.touched || usuario.controls.address.dirty)">* Address required. </ion-label>
+              <ion-label color="danger" *ngIf="usuario.controls.address.errors?.minlength && (usuario.controls.address.touched || usuario.controls.address.dirty)">* Address have at least 4 characters.</ion-label>
+              
+              <ion-item>
+                <ion-input formControlName="email" placeholder="Email" class="inputText"></ion-input>
+              </ion-item>
+              <ion-label color="danger" *ngIf="usuario.controls.email.errors?.required && (usuario.controls.email.touched || usuario.controls.email.dirty)">* Email required.</ion-label>
+              <ion-label color="danger" *ngIf="usuario.controls.email.errors?.email && (usuario.controls.email.touched || usuario.controls.email.dirty)">* Invalid email.</ion-label>
+              
+              <ion-item>
+                <ion-input formControlName="phone" placeholder="Phone" class="inputText"></ion-input>
+              </ion-item>
+              <ion-label color="danger" *ngIf="usuario.controls.phone.errors?.required && (usuario.controls.phone.touched || usuario.controls.phone.dirty)">* Phone number required. </ion-label>
+              <ion-label color="danger" *ngIf="usuario.controls.phone.errors?.minlength && (usuario.controls.phone.touched || usuario.controls.phone.dirty)">* Phone number have at least 8 characters.</ion-label>
+              
+              <ion-list>
+                <ion-list-header>
+                  <ion-label>
+                    Our Services
+                  </ion-label>
+                </ion-list-header>              
+                <ion-item>
+                    <ion-label>Hire:</ion-label>
+                    <ion-select multiple="true" cancelText="Cancel" okText="Okay!" formControlName="services">
+                      <ion-select-option value="bacon">Bacon</ion-select-option>
+                      <ion-select-option value="olives">Black Olives</ion-select-option>
+                      <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+                      <ion-select-option value="peppers">Green Peppers</ion-select-option>
+                      <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+                      <ion-select-option value="onions">Onions</ion-select-option>
+                      <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+                      <ion-select-option value="pineapple">Pineapple</ion-select-option>
+                      <ion-select-option value="sausage">Sausage</ion-select-option>
+                      <ion-select-option value="Spinach">Spinach</ion-select-option>
+                    </ion-select>        
+                </ion-item>
+              </ion-list>
+              <ion-label color="danger" *ngIf="usuario.controls.services.errors?.required && (usuario.controls.services.touched || usuario.controls.services.dirty)">* Select al least 1 service.</ion-label>
+              <ion-label color="danger" *ngIf="usuario.controls.services.errors?.minlength && (usuario.controls.services.touched || usuario.controls.services.dirty)">* Select al least 1 service.</ion-label>
+              
+              <p class="ion-text-center">
+                <ion-button type="submit" [disabled]="!usuario.valid">Send</ion-button>
+              </p>  
+            </form>
+          </ion-row>
+
+        </ion-card-content>        
+      </ion-card>
+    </ion-grid>
+  </div>
+</ion-content>

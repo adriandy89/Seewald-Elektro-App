@@ -1,0 +1,7 @@
+{
+  "name": "SEEWALD-ELEKTRO",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
