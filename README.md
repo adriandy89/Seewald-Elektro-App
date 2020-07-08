@@ -2,7 +2,7 @@
 Ionic 5 + Angular, Demo App.
 
 ## EXAMPLE DEMO APP:
-
+<div style="margin: 0px auto;">
 ![Screenshot](docs/1.jpg)
 
 ![Screenshot](docs/2.jpg)
@@ -10,3 +10,4 @@ Ionic 5 + Angular, Demo App.
 ![Screenshot](docs/3.jpg)
 
 ![Screenshot](docs/4.jpg)
+</div>
