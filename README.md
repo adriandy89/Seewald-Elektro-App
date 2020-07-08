@@ -1,7 +1,7 @@
 # Seewald-Elektro-App
 Ionic 5 + Angular, Demo App.
 
-## EXAMPLE APP:
+## EXAMPLE DEMO APP:
 
 ![Screenshot](docs/1.jpg)
 
