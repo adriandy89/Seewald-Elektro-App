@@ -7,9 +7,9 @@ Ionic 5 + Angular, Demo App.
 
 <img src="docs/1.jpg">
 
-![Screenshot](docs/2.jpg)
+<img src="docs/2.jpg">
 
-![Screenshot](docs/3.jpg)
+<img src="docs/3.jpg">
 
-![Screenshot](docs/4.jpg)
+<img src="docs/4.jpg">
 <p>
