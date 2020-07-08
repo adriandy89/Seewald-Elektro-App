@@ -5,7 +5,7 @@ Ionic 5 + Angular, Demo App.
 
 <p align="center">
 
-<img src="docs/1.jpg">
+<img src="docs/1.jpg" style="border-radius: 8px;">
 
 <img src="docs/2.jpg">
 
