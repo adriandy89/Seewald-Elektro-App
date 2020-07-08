@@ -2,9 +2,10 @@
 Ionic 5 + Angular, Demo App.
 
 ## EXAMPLE DEMO APP:
+
 <p align="center">
 
-![Screenshot](docs/1.jpg)
+<img src="docs/1.jpg">
 
 ![Screenshot](docs/2.jpg)
 
