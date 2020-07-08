@@ -2,7 +2,7 @@
 Ionic 5 + Angular, Demo App.
 
 ## EXAMPLE DEMO APP:
-<div style="margin: 0px auto;">
+<div style="margin: 0px auto; text-align: center;">
 ![Screenshot](docs/1.jpg)
 
 ![Screenshot](docs/2.jpg)
